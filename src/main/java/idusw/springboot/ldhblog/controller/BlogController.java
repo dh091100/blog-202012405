@@ -18,7 +18,7 @@ public class BlogController {
     }
     @GetMapping("/delete/{idx}")
     public String deleteBlog(@PathVariable Long idx, Model model) {
-        // controller 가 service에게 요청
+        // controller 가 service에게 요청 234
         BlogDto dto = BlogDto.builder()
                 .idx(idx)
                 .build();
